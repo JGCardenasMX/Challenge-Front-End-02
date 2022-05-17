@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-login.css">
+    <link rel="stylesheet" href="/css/superior-Interior.css">
+    <link rel="stylesheet" href="/css/rodapie.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4c53dfcacd.js" crossorigin="anonymous"></script>
+
+</head>
+<body class="body-login">
+    <header class="superiorLogin">
+        <section class="superiorInterior">
+            <div class="superiorIntCentro">
+                <div class="areaLogo">
+                    <a href="index.html"><img src="/imagenes/Logo.png" alt="logo"></a>
+                </div>
+                <div class="superiorBusqueda">
+                    <input class="barraBusqueda" id="barraBusqueda" type="search" placeholder="¿Qué deseas buscar?" data-buscar>
+                    <span id="icon">
+                        <i class="fa-solid fa-magnifying-glass" id="buscar" onclick="searchProduct()"></i>
+                    </span>
+                </div>
+                <form action="login.html">
+                    <input type="submit" value="Login" class="loginUsuario">
+                </form>
+            </div>
+        </section>
+    </header>
+
+    <section class="inicioSesion">
+            <form class="areaLogin" action="agregar.html">
+                <h2>Iniciar Sesión</h2>
+                <input type="email" class="input-email" placeholder="Escriba su correo electrónico nombre@nombre.com" pattern="^([\w-]\.?)+@([\w-]+\.)+([A-Za-z]{2,4})+$" data-email required>
+                <input type="password" class="input-password" placeholder="Escriba su contraseña" required>
+                <input type="submit" class="input-entrar" value="Entrar">
+            </form>
+    </section>
+
+    <section class="rodapie">
+        <div class="pieDePagina">
+            <div class="pieDePaginaContenido">
+                    <img src="/imagenes/Logo.png" alt="logo">
+                    <div class="sobre">
+                        <ul >
+                            <li>Quienes somos</li>
+                            <li>Política de privacidad</li>
+                            <li>Programa de fidelidad</li>
+                            <li>Nuestras Tiendas</li>
+                            <li>Quiero ser franquiciado</li>
+                            <li>Anúncie aquí</li>
+                        </ul>
+                    </div>
+                <form class="contacto" action="">
+                    <h2>Hable con nosotros</h2>
+                    <div class="contactoArea">
+                        <input type="text" id="nombreApellido" class="input-padron" name="nombreApellido" required pattern="^([A-Za-záéíóúñ]+\s?)+" placeholder="Fulanito de Tal" maxlength="50" data-tipo="nombre">
+                        <label class="input-padron-label" for="nombreApellido">Nombre</label>
+                        
+                        <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Escribe tu mensaje"></textarea>
+                    </div>
+                    <input type="submit" value="Enviar mensaje" id="enviarMensaje">
+                </form>
+            </div>
+        </div>
+        <div class="rodapieInterior">
+            <p>Desarrollado por Javier Gerardo Cárdenas Castañeda 2022</p>
+        </div>
+    </section>
+</body>
+<script src="js/busqueda.js"></script>
+</html>

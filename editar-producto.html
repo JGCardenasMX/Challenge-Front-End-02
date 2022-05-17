@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraGeek</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style-agregar.css">
+        <link rel="stylesheet" href="css/superior-Interior.css">
+        <link rel="stylesheet" href="css/superior-Exterior.css">
+        <link rel="stylesheet" href="css/productos.css">
+        <link rel="stylesheet" href="css/rodapie.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Raleway:wght@500&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/4c53dfcacd.js" crossorigin="anonymous"></script>
+</head>
+<body class="body-agregar">
+    <header class="superiorLogin">
+        <section class="superiorInterior">
+            <div class="superiorIntCentro">
+                <div class="areaLogo">
+                    <a href="index.html"><img src="/imagenes/Logo.png" alt="logo"></a>
+                </div>
+                <div class="superiorBusqueda">
+                    <input class="barraBusqueda" id="barraBusqueda" type="search" placeholder="¿Qué deseas buscar?" data-buscar>
+                    <span id="icon">
+                        <i class="fa-solid fa-magnifying-glass" id="buscar" onclick="searchProduct()"></i>
+                    </span>
+                </div>
+                <form action="login.html">
+                    <input type="submit" value="Login" class="loginUsuario">
+                </form>
+            </div>
+        </section>
+    </header>
+
+    <section class="agregarProductos">
+        <form class="agregarProducto" data-editform>
+            <h2>Editar Producto</h2>
+            <div class="agregarImagen">
+                <img src="" alt="" data-editimagen>
+                <span>O</span>
+                <label class="input-file">
+                    <input type="file" class="inputFile" id="files" name="files[]" hidden data-editimagen/>
+                    Busque en su computador
+                </label>
+                
+            </div>
+            
+            <div class="agregarEtiquetas">
+                <input type="text" id="productoNombre" class="input-agregar" name="productoNombre" required pattern="^([A-Za-záéíóúñ]+\s?)+" placeholder="Producto XYZ" maxlength="50" data-tipo="nombre" data-editnombre>
+                <label class="input-agregar-label" for="productoNombre">Nombre del producto</label>
+            </div>
+            <div class="agregarEtiquetas">
+                <input type="number" id="productoPrecio" class="input-agregar" name="productoPrecio" required pattern="\d{1,3}(?:[.,]\d{3})*(?:[.,]\d{2})" placeholder="$60.00" maxlength="10" step="any" data-tipo="precio" data-editprecio>
+                <label class="input-agregar-label" for="productoPrecio">Precio del producto</label>
+            </div>
+
+            <div class="agregarEtiquetas">
+                <input type="text" id="productoCategoria" class="input-agregar" name="productoCategoria" required placeholder="Star Wars" maxlength="15" step="any" data-tipo="categoria" data-editcategoria>
+                <label class="input-agregar-label" for="productoCategoria">Categoria del producto</label>
+            </div>
+                
+            <textarea name="productoDescripcion" id="descripcionProducto" cols="30" rows="10" placeholder="Descripción del producto" data-editdescripcion></textarea>
+            <input type="submit" value="Editar producto" id="btnAgregar">
+        </form>
+</section>
+    
+    <section class="rodapie">
+        <div class="pieDePagina">
+            <div class="pieDePaginaContenido">
+                    <img src="/imagenes/Logo.png" alt="logo">
+                    <div class="sobre">
+                        <ul >
+                            <li>Quienes somos</li>
+                            <li>Política de privacidad</li>
+                            <li>Programa de fidelidad</li>
+                            <li>Nuestras Tiendas</li>
+                            <li>Quiero ser franquiciado</li>
+                            <li>Anúncie aquí</li>
+                        </ul>
+                    </div>
+                <form class="contacto" action="">
+                    <h2>Hable con nosotros</h2>
+                    <div class="contactoArea">
+                        <input type="text" id="nombreApellido" class="input-padron" name="nombreApellido" required pattern="^([A-Za-záéíóúñ]+\s?)+" placeholder="Fulanito de Tal" maxlength="50" data-tipo="nombre">
+                        <label class="input-padron-label" for="nombreApellido">Nombre</label>
+                        
+                        <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Escribe tu mensaje"></textarea>
+                    </div>
+                    <input type="submit" value="Enviar mensaje" id="enviarMensaje">
+                </form>
+            </div>
+        </div>
+        <div class="rodapieInterior">
+            <p>Desarrollado por Javier Gerardo Cárdenas Castañeda 2022</p>
+        </div>
+    </section>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="module" src="./js/registro-producto.js"></script>
+<script src="js/busqueda.js"></script>
+<script type="module" src="js/editar-producto.js"></script>
+</html>

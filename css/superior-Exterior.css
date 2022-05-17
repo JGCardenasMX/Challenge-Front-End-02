@@ -1,0 +1,137 @@
+.superiorExterior{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    
+    position: static;
+    width: 100%;
+    height: 352px;
+    
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 41.15%, rgba(0, 0, 0, 0.8) 100%), url("/imagenes/Exterior.png");
+    background-size: cover;
+}
+
+.superiorExtTexto{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 150px 0 32px 0;
+
+    position: static;
+    width: 90%;
+    height: 170px;
+}
+
+.superiorExtTexto h2{
+    position: static;
+    width: auto;
+    height: 61px;
+    
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 61px;
+    
+    color: #FFFFFF;
+}
+
+.superiorExtTexto h3{
+    position: static;
+    width: 751px;
+    height: 26px;
+    
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    
+    color: #FFFFFF;
+    margin: 16px 0;
+}
+
+.verConsolas{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    
+    position: static;
+    width: 129px;
+    height: 51px;
+    
+    background: #2A7AE4;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    
+    color: #FFFFFF;
+}
+
+/* para Tablet */
+@media screen and (max-width:821px) {
+    .superiorExterior{
+        height: 352px;
+    }
+    
+    .superiorExtTexto{
+        width: 100%;
+        height: 159px;
+        padding-top: 161px;
+        margin-left: 32px;
+    }
+    
+    .superiorExtTexto h2{
+        width: auto;
+    }
+    
+    .superiorExtTexto h3{
+        width: auto;
+        height: 26px;
+    }
+    
+    .verConsolas{
+        width: auto;
+        height: auto;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 16px;
+        padding: 12px 16px;
+    }
+}
+
+
+/* para Celular */
+@media screen and (max-width:415px){
+    .superiorExterior{
+        height: 192px;
+    }
+    
+    .superiorExtTexto{
+        width: 100%;
+        height: 98px;
+        padding: 78px 0 16px 0;
+    }
+    
+    .superiorExtTexto h2{
+        width: auto;
+        font-size: 22px;
+        line-height: 26px;
+    }
+    
+    .superiorExtTexto h3{
+        width: auto;
+        height: 26px;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 16px;
+    }
+}

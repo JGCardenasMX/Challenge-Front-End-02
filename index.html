@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AluraGeek</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/superior-Interior.css">
+        <link rel="stylesheet" href="css/superior-Exterior.css">
+        <link rel="stylesheet" href="css/index-productos.css">
+        <link rel="stylesheet" href="css/rodapie.css">
+
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Raleway:wght@500&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/4c53dfcacd.js" crossorigin="anonymous"></script>
+        
+
+    </head>
+    <body class="body-index">
+        <header class="superior">
+            <section class="superiorInterior">
+                <div class="superiorIntCentro">
+                    <div class="areaLogo">
+                        <a href="index.html"><img src="/imagenes/Logo.png" alt="logo"></a>
+                    </div>
+                    <div class="superiorBusqueda">
+                        <input class="barraBusqueda" id="barraBusqueda" type="search" placeholder="¿Qué deseas buscar?" data-buscar>
+                        <span id="icon">
+                            <i class="fa-solid fa-magnifying-glass" id="buscar" onclick="searchProduct()"></i>
+                        </span>
+                    </div>
+                    <form action="login.html">
+                        <input type="submit" value="Login" class="loginUsuario">
+                    </form>
+                    
+                </div>
+            </section>
+            <section class="superiorExterior">
+                <div class="superiorExtTexto">
+                    <h2>Febrero Promocional</h2>
+                    <h3>Productos selecionados con 33% de descuento</h3>
+                    <form action="#consolas">
+                        <input type="submit" class="verConsolas" value="Ver Consolas">
+                    </form>
+                </div>
+            </section>
+        </header>
+
+        <main>
+            <section class="productos">
+                <div class="productosLista">
+                    <div class="productosSeccion" id="Star-Wars">
+                        <h2>Star Wars</h2>
+                        <form action="productos.html">
+                            <input type="image" title="Ver todo" src="imagenes/ver_todo.png" alt="Ver todo">
+                        </form>
+                    </div>
+                    <div class="filaProductos">
+                        <table class="fila-StarWars"  >
+                            <tbody data-preview-StarWars>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="productosLista">
+                    <div class="productosSeccion" id="consolas">
+                        <h2>Consolas</h2>
+                        <form action="productos.html">
+                            <input type="image" title="Ver todo" src="imagenes/ver_todo.png" alt="Ver todo">
+                        </form>
+                    </div>
+                    <div class="filaProductos">
+                        <table class="fila-Consolas"  >
+                            <tbody data-preview-Consolas>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            
+                <div class="productosLista">
+                    <div class="productosSeccion" id="diversos">
+                        <h2>Diversos</h2>
+                        <form action="productos.html">
+                            <input type="image" title="Ver todo" src="imagenes/ver_todo.png" alt="Ver todo">
+                        </form>
+                    </div>
+                    <div class="filaProductos">
+                        <table class="fila-Diversos"  >
+                            <tbody data-preview-Diversos>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+            <section class="rodapie">
+                <div class="pieDePagina">
+                    <div class="pieDePaginaContenido">
+                            <img src="imagenes/Logo.png" alt="logo">
+                            <div class="sobre">
+                                <ul >
+                                    <li>Quienes somos</li>
+                                    <li>Política de privacidad</li>
+                                    <li>Programa de fidelidad</li>
+                                    <li>Nuestras Tiendas</li>
+                                    <li>Quiero ser franquiciado</li>
+                                    <li>Anúncie aquí</li>
+                                </ul>
+                            </div>
+                        <form class="contacto" action="">
+                            <h2>Hable con nosotros</h2>
+                            <div class="contactoArea">
+                                <input type="text" id="nombreApellido" class="input-padron" name="nombreApellido" required pattern="^([A-Za-záéíóúñ]+\s?)+" placeholder="Fulanito de Tal" maxlength="50" data-tipo="nombre">
+                                <label class="input-padron-label" for="nombreApellido">Nombre</label>
+                                
+                                <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Escribe tu mensaje"></textarea>
+                            </div>
+                            <input type="submit" value="Enviar mensaje" id="enviarMensaje">
+                        </form>
+                    </div>
+                </div>
+                <div class="rodapieInterior">
+                    <p>Desarrollado por Javier Gerardo Cárdenas Castañeda 2022</p>
+                </div>
+            </section>
+        </main>
+    </body>
+    <script type="module" src="service/client-service.js"></script>
+    <script src="js/busqueda.js"></script>
+</html>

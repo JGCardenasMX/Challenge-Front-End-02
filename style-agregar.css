@@ -1,0 +1,350 @@
+.body-agregar{
+    position: relative;
+    width: 100%;
+    height: 1228px;
+    
+    background: #F5F5F5;
+}
+
+.agregarProductos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    
+    position: static;
+    width: 1136px;
+    height: 515px;
+    margin: 64px auto;
+}
+
+.agregarProducto{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    
+    position: static;
+    width: 559px;
+    height: 515px;
+    margin: 0;
+}
+
+.agregarProducto h2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    
+    position: static;
+    width: 559px;
+    height: 38px;
+    
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    color: #464646;
+}
+
+.agregarImagen{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    
+    position: static;
+    width: 559px;
+    height: 152px;
+    margin: 16px 0;
+    justify-content: space-between;
+}
+
+#agregarDestino{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    
+    position: static;
+    width: 301px;
+    height: 152px;
+    left: 0px;
+    top: 0px;
+    
+    background: #FFFFFF;
+    
+    border: 1px dashed #C8C8C8;    
+}
+
+#list img{
+    height: 150px;
+    border: 1px solid #000;
+    margin: 10px 5px 0 0;
+}
+
+#agregarDestino i{
+    position: static;
+    font-size: 32px;
+    
+    color: #C8C8C8;
+}
+
+#agregarDestino p{
+    position: static;
+    width: 237px;
+    left: calc(50% - 237px/2);
+    top: 52.63%;
+    bottom: 21.05%;
+    
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    color: #6B6B6B;
+}
+
+.agregarImagen p{
+    position: static;
+    width: 13px;
+    
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    color: #464646;
+}
+
+
+.agregarImagen .input-file{
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    
+    position: static;
+    width: 229px;
+    height: 51px;
+    left: 330px;
+    top: 50.5px;
+    
+    border: 1px solid #2A7AE4;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15.7px;
+    line-height: 19px;
+    
+    color: #2A7AE4;
+    cursor: pointer;
+}
+
+.agregarImagen .inputFile{
+    width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.agregarEtiquetas{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: static;
+    width: 559px;
+    height: 46px;
+    margin-bottom: 10px;
+}
+
+.agregarEtiquetas input{
+    width: 535px;
+    height: 40px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+
+    display: flex;
+    align-items: center;
+
+    color: #464646;
+    margin: 0;
+    padding: 0px 12px;
+    border-top: 0;
+    border-inline: 0;
+}
+
+.agregarEtiquetas label{
+    padding: 8px 12px 4px 12px;
+    
+}
+
+
+.input-agregar{
+    position: static;
+    width: 559px;
+    height: 56px;
+    left: calc(50% - 559px/2);
+    top: 0px;
+    
+    background: #FFFFFF;
+    border-radius: 4px;
+    
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    margin-bottom: 16px;
+}
+
+label.input-agregar-label {
+    position: absolute;
+    
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 0px;
+    
+    display: flex;
+    align-items: center;
+    
+    color: #A2A2A2;
+}
+
+#descripcionProducto{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px 0 0 16px ;
+    
+    position: static;
+    width: 543px;
+    height: 82px;
+    margin-bottom: 16px;
+    border-top: 0;
+    border-inline: 0;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    
+    color: #A2A2A2;
+
+}
+
+#btnAgregar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    
+    position: static;
+    width: 559px;
+    height: 51px;
+
+    
+    background: #2A7AE4;
+    
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+
+/* para Tablet */
+@media screen and (max-width:912px) {
+    .body-agregar{
+        height: 1105px;
+    }
+
+    .agregarProductos{
+        width: 100%;
+        margin: 32px auto;
+    }
+
+    .agregarProducto{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        
+        position: static;
+        width: calc(100% - 64px);
+        height: 503px;
+    }
+
+    .agregarEtiquetas{
+        width: 100%; 
+    }
+
+    .agregarEtiquetas input{
+        width:auto;
+    }
+
+    #descripcionProducto{
+        width: calc(100% - 16px)
+    }
+
+    #btnAgregar{
+        width: 100%;
+    }
+
+}
+
+/* para Celular */
+@media screen and (max-width:415px){
+    .body-agregar{
+        height: 1244px;
+    }
+
+    .agregarImagen{
+        width: 100%;
+
+    }
+
+    .agregarImagen p, .agregarImagen input{
+        display: none;
+    }
+    
+    .agregarProducto h2{
+        width: 100%;
+        height: 26px;
+        
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    #agregarDestino{
+        width: 100%;
+        height: 134px; 
+    }
+}

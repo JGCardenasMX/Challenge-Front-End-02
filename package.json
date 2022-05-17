@@ -1,0 +1,19 @@
+{
+  "name": "challenge-front-end-02",
+  "version": "1.0.0",
+  "description": "Package tienda virtual AluraGeek",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JGCardenasMX"
+  },
+  "keywords": [
+    "Oracle",
+    "ONE"
+  ],
+  "author": "Javier Gerardo Cárdenas Castañeda",
+  "license": "ISC"
+}

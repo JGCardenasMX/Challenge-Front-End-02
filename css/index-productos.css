@@ -1,0 +1,300 @@
+.productos{
+    width: 100%;
+}
+
+.productosLista{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    
+    
+    position: static;
+    width: 80%;
+    height: 306px;
+    margin: 64px auto;
+}
+
+.productosSeccion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    
+    position: static;
+    width: 100%;
+    height: 38px;
+    margin: 0 0 16px 0px;
+}
+
+.productosSeccion h2{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    
+    color: #464646;
+}
+
+.productosSeccion input{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+
+    position: static;
+    width: 97px;
+    height: 24px;
+    
+    position: static;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    
+    color: #2A7AE4;
+}
+
+.filaProductos{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0px;
+    
+    position: static;
+    width: 100%;
+    height: 252px;
+}
+
+.filaProducto{
+    display: flex;
+}
+
+.fila-StarWars{
+    display: flex;
+    width: 100%;
+}
+
+.fila-StarWars tbody{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.fila-Consolas{
+    display: flex;
+    width: 100%;
+}
+
+.fila-Consolas tbody{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.fila-Diversos{
+    display: flex;
+    width: 100%;
+}
+
+.fila-Diversos tbody{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.producto{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    
+    position: static;
+    width: 176px;
+    height: 252px;
+}
+
+.producto tbody{
+    display: flex;
+}
+
+.nombreProducto{
+    position: static;
+    
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    
+    color: #464646;
+
+    margin: 8px 0px 0 0;
+}
+
+.precioProducto{
+    position: static;
+    
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    
+    color: #464646;
+    
+    margin: 8px 0 8px 0px;
+}
+
+.verProducto{
+    position: static;
+    
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #2A7AE4;
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+}
+
+/* para Tablet */
+@media screen and (max-width:821px) {
+    .productosLista{
+        width: auto;
+        height: 358px;
+        margin: 0;
+    }
+    
+    .productosSeccion{
+        width: calc(100% - 64px);
+        height: 26px;
+        margin: 32px 32px 0 32px;
+    }
+    
+    .productosSeccion h2{
+        font-size: 22px;
+        line-height: 26px;
+    }
+    
+    .productosSeccion input{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+    
+        position: static;
+        width: 97px;
+        height: 24px;
+        
+        position: static;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        
+        color: #2A7AE4;
+    }
+    
+    .filaProductos{
+        width: calc(100% - 64px);
+        height: 252px;
+        margin: 16px 32px 32px 32px;
+    }
+    
+    .producto{
+        width: 164px;
+    }
+
+    .imgProducto{
+        width: 164px;
+        height: 174px;
+    }
+
+    .producto img{
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+}
+
+
+/* para Celular */
+@media screen and (max-width:415px){
+    .productosLista{
+        height: 588px;
+    }
+    
+    .productosSeccion{
+        width: calc(100% - 64px);
+        height: 26px;
+        margin: 16px 16px 16px 16px;
+    }
+    
+    .productosSeccion h2{
+        font-size: 22px;
+        line-height: 26px;
+    }
+    
+    .productosSeccion input{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+    
+        position: static;
+        width: 97px;
+        height: 24px;
+        
+        position: static;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        
+        color: #2A7AE4;
+    }
+    
+    .filaProductos{
+        width: calc(100% - 32px);
+        height: 530px;
+        margin: 0 16px;
+        flex-wrap: wrap;
+    }
+    
+    .producto{
+        width: 164px;
+    }
+
+    .imgProducto{
+        width: 164px;
+        height: 174px;
+    }
+
+    .producto img{
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+
+    .fila-StarWars tbody{
+        flex-flow: wrap;
+    }
+
+    .fila-Consolas tbody{
+        flex-flow: wrap;
+    }
+
+    .fila-Diversos tbody{
+        flex-flow: wrap;
+    }
+}
